@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+             x:Class="Xamarin.MediaElement.Sample.Views.NewVideoPage">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="Bisque" HorizontalScrollBarVisibility="Always" VerticalOptions="FillAndExpand">
+            <MediaElement x:Name="mediaPlayer" HeightRequest="250" WidthRequest="350" 
+                          Source="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+                  BackgroundColor="DarkGoldenrod"
+                  ShowsPlaybackControls="True"
+                  VerticalOptions="CenterAndExpand"
+                  HorizontalOptions="Center"
+                  AutoPlay="True"
+                  IsLooping="True"
+                  MediaOpened="OnMediaOpened"
+                  MediaFailed="OnMediaFailed"
+                  MediaEnded="OnMediaEnded"
+                  SeekCompleted="OnSeekCompleted" />
+        </ScrollView>
+    </ContentPage.Content>
+   
+</ContentPage>
